@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    background-color: white;
+  }
+  
+  /* Navigation */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+    z-index: 1000;
+    background-color: white;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    color: #737373;
+  }
+  
+  .nav-links .icon{
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Main Layout */
+  body {
+    font-family: "monteserrata", sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 80px; /* Account for fixed navbar */
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    margin-top: 60px; /* Space for navbar */
+  }
+  
+  /* Header */
+  .header {
+    margin-bottom: 1rem;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #f2f2f2;
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Sidebar */
+  
+  .user-options {
+    width: 260px;
+    padding: 40px;
+    border-right: 1px solid #f2f2f2;
+    background-color: white;
+  }
+  
+  .user-options {
+    list-style: none;
+  }
+  
+  .user-options  li a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 0;
+    display: block;
+    font-size: 1rem;
+  }
+  
+  .user-options li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main content area */
+  .settings-form {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #f2f2f2;
+    }
+  }
+  form {
+    max-width: 800px;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* Profile Picture */
+  .profile-pic {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-pic img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    object-fit: cover;
+  }
+  
+  .profile-pic button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .buttons .save {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .buttons .delete {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .sidebar {
+      width: 200px;
+    }
+    
+    .header {
+      width: calc(100% - 200px);
+      margin-left: 200px;
+    }
+    
+    .settings-form {
+      margin-left: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding-top: 60px;
+    }
+    
+    .sidebar {
+      position: static;
+      width: 100%;
+      height: auto;
+      border-right: none;
+      border-bottom: 1px solid #f2f2f2;
+    }
+    
+    .header {
+      width: 100%;
+      margin-left: 0;
+    }
+    
+    .settings-form {
+      margin-left: 0;
+    }
+    
+    .container {
+      flex-direction: column;
+    }
+    
+    form {
+      padding: 1rem;
+    }
+  }
+
+  
+.settings{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 90px;
+    /* left: 130px; */
+    border-bottom: 1px solid #f2f2f2;
+    color: #1a1a1a;
+    z-index: 1000;
+}
+.settings div{
+    margin-left: 130px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+}
